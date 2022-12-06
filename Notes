@@ -1,0 +1,62 @@
+UML:__________
+
+Dashed arrow means dependency. If some class makes use of methods from MATH class then we draw a dashed
+arrow between it and math.
+
+Abstract classes are just like normal parent classes of inherited things, except its name and its abstract
+methods are italicised (reminder - an abstract class with *only* abstract methods is an interface).
+
+Aggregation is just a weaker form of composition. If the "child" can meaningfully exist by itself, then
+its aggregation. If its really a strong component, then we say its composition.
+
+Aggregation is a 'has a' relationship, whereas Composition is a 'can only be understood as the sum of
+these parts' relationship. The arrow goes on the side of the parent.
+
++ is public, - is private, # is protected
+
+
+
+
+
+VISIBILITY:__________
+
+Protected can be seen in current class, derived class in same package, derived class in other package,
+non-derived class in the same package, but not non-derived class in other package.
+
+Non-specified can be seen in current class, not in derived class in other package, however can be seen
+in non-derived class in same packege.
+
+In terms of power: public, protected, non-specified, private.
+
+Protected is basically like non specifying, but with the surprising trick of being visible from
+
+A class cannot extend more than one parent class, however it can implement many interfaces.
+
+Static attributes or methods indicated with underline. Constants via f i n a l naming convention.
+
+Encapsulation is the practice of putting private attributes then public methods
+
+
+
+SORTING:__________
+
+ Selection sort. i and j maintained. i is min to begin. If cycle through j and j is smaller,
+ j is min. End for. If i != min, then this means min has been assigned j. Swap [i] and [min].
+ Fixing leftmost element, sweep through all right elements till smallest found. Then swap. Then come in
+ one closer from the left.
+
+ Worst case n^2 [6, 5, 4, 3, 2, 1] n comparisons and one swap on first pass. Actually, we are always
+ gonna be in a n^2 time because we have two for loops.
+
+ Insertion sort [2, 3, 1, 4, 5, 6] is better because we only make one pass through the array,
+ comparing elements pairwise. 1 < 3 so we keep checking pairwise if its less than [i] until i = 0.
+ Then we swap. But this only makes one true pass
+
+ Sum of arithmetic series 8 + 9 + 2 + 4 = 23
+                          4 + 2 + 9 + 8 = 23
+                          ------------------
+                          12 +11 +11 +12 = 46 (twice the sum)
+
+                          (n)(n-1) all over 2 = ////dont get it
+
+  Note that pass by reference is less overhead so more efficient
