@@ -49,7 +49,7 @@ public class Personnel {
             }
 
             if (min != i) {
-                temp = rh[min];
+                temp = rh[i];
                 rh[i] = rh[min];
                 rh[min] = temp;
             }
